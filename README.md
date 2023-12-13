@@ -35,6 +35,9 @@ The logic is separated from UI. \
 The logic of DB is done in the model while controller just use the models so if any change is done in the models, no need to change anything in controllers and UI/views. \
 We have two types of controllers in the project which are services and pages; services contain the logic while pages view/diplay the views. \
 The models use ADODB active record class. 
+we have home page, login page, and add book page (we will have three page controllers), so put them in pages where Home render home view,...etc.
+For services, add service for books to contain all logic/requests handling done on books, service for users to contain all logic/requests handling done on users such as sign up, sign in,...etc.
+
 
 ### Power of vue:
 The change in any state[ref or reactive] (like books state in home.js) is reflected directly on UI.
