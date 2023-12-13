@@ -22,6 +22,10 @@ the database format is in dB.sql
 **Add Book page** -> http://HostName/MVC/public/pages/addbook/add_book_view \
 We have three pages; **Home page**, **Login page**, and **Add Book page**.
 
+## Configurations
+All configurations are in app/core/config.php, customize the values of DBNAME, DBHOST, DBUSER, DBPASS, DBDRIVER, and ROOT \
+Put MVC folder in wamp to try it.
+
 ## Technologies
 **Backend**: PHP MVC, adodb active record php, and smarty.\
 **Frontend**: Vue js and smarty. 
