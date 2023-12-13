@@ -50,6 +50,8 @@ https://youtu.be/q0JhJBYi4sw
 ### Reference to vue:
 https://vuejs.org/tutorial/#step-1 \
 --> I used composition and no SFC (just HTML)
+![image](https://github.com/bassant1999/Library/assets/72526468/e4e35b1b-3c8f-44a2-a14a-e1cda537f448)
+
 
 ### Reference to php and vue full stack:
 https://www.youtube.com/playlist?list=PLUoIt0OrSPCsrvjwFjrhKBbgvhA5W8Iwi
