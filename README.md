@@ -5,6 +5,8 @@ The user can view books, search for books, borrow and return a book, and view hi
 The admin can view books, search for books, and add new books.
 
 ## Database 
+![image](https://github.com/bassant1999/Library/assets/72526468/21f1503c-9649-489b-9680-1c8e2d367621)
+
 the database format is in dB.sql
 
 ## paths:
