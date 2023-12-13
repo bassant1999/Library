@@ -15,31 +15,31 @@
         <div class="form-group">
           <label class="control-label col-sm-2" for="title">Title:</label>
           <div class="col-sm-10">
-            <input class="form-control" type="text" name="title" v-model="title" >
+            <input class="form-control" type="text" name="title" v-model="objNewBook.title" >
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2" for="author">Author:</label>
           <div class="col-sm-10">
-            <input class="form-control" type="text" name="author" v-model="author">
+            <input class="form-control" type="text" name="author" v-model="objNewBook.author">
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2" for="description">Description:</label>
           <div class="col-sm-10">
-            <input class="form-control" type="text" name="description" v-model="description" >
+            <input class="form-control" type="text" name="description" v-model="objNewBook.description" >
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2" for="img_url">Image Url:</label>
           <div class="col-sm-10">
-            <input class="form-control" type="text" name="img_url" v-model="img_url" >
+            <input class="form-control" type="text" name="img_url" v-model="objNewBook.img_url" >
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2" for="max_num">Available number of books:</label>
           <div class="col-sm-10">
-            <input class="form-control" type="text" name="max_num" v-model="max_num" >
+            <input class="form-control" type="text" name="max_num" v-model="objNewBook.max_num" >
           </div>
         </div>
         <div class="form-group">

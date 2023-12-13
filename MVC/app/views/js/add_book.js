@@ -3,28 +3,29 @@ const { createApp, ref } = Vue
 
 const app = createApp({
     setup() {
-    const title = ref('');
-    const author = ref('');
-    const description = ref('');
-    const img_url = ref('');
-    const max_num = ref(0);
+
+    const objNewBook = ref({
+        title:'',
+        author:'',
+        description: '',
+        img_url:'',
+        max_num:0
+
+    });
     const success_msg = ref(0);
     const whoActive = ref(2);
+
 
     // add book
     const add_book = () =>
     {
-        if(title.value && author.value && description.value && img_url.value)
+        if(objNewBook.value.title && objNewBook.value.author && objNewBook.value.description && objNewBook.value.img_url)
         {
             fetch('http://localhost/MVC/public/services/books/add_book', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                title: title.value,
-                author: author.value,
-                description: description.value,
-                img_url: img_url.value,
-                max_num: max_num.value
+                newBook: objNewBook.value
             })
             })
             .then(res => res.json())
@@ -33,10 +34,11 @@ const app = createApp({
                 if(res[0].status == 1)
                 {
                     success_msg.value = 1;
-                    title.value = '';
-                    author.value = '';
-                    description.value = '';
-                    img_url.value = '';
+                    objNewBook.value.title = '';
+                    objNewBook.value.author = '';
+                    objNewBook.value.description = '';
+                    objNewBook.value.img_url = '';
+                    objNewBook.value.imax_num = 0;
                 }
                 else
                 {
@@ -53,7 +55,7 @@ const app = createApp({
 
     
     return {
-        success_msg, title, author, description, img_url, max_num, whoActive, add_book
+        objNewBook, success_msg , whoActive, add_book
     }
 
     }

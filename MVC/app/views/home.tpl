@@ -1,7 +1,7 @@
 {extends file="{$smarty.const.VIEW_TPL_PATH}/views/layout.tpl"}
 
 {block name=additional}
-    <form class="navbar-form navbar-left">
+    <form class="navbar-form navbar-left" @submit.prevent="search">
     <div class="form-group">
         <input type="text" class="form-control" name = "book_title" placeholder="Search For Book" v-model="sbook_title">
     </div>

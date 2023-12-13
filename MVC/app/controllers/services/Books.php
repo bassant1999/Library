@@ -112,11 +112,11 @@ class Books extends Controller
         {
             $data = json_decode(file_get_contents("php://input"));
             $book = new Book();
-            $book->title = $data->title;
-            $book->author = $data->author;
-            $book->description = $data->description;
-            $book->img_url = $data->img_url;
-		    $book->max_num = (int)($data->max_num);
+            $book->title = $data->newBook->title;
+            $book->author = $data->newBook->author;
+            $book->description = $data->newBook->description;
+            $book->img_url = $data->newBook->img_url;
+		    $book->max_num = (int)($data->newBook->max_num);
             if ($book->save()) 
             {
                 $response[] = array('status'=>1);       

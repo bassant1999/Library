@@ -15,7 +15,7 @@
                 <nav class="navbar navbar-inverse">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                        <a class="navbar-brand" href="http://localhost/MVC/public/">Library</a>
+                        <a class="navbar-brand">Library</a>
                         </div>
                         <ul class="nav navbar-nav">
                         <li :class="{ active: whoActive == 0 }"><a href="http://localhost/MVC/public/">Home</a></li>
